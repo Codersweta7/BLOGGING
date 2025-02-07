@@ -3,7 +3,7 @@ export default function Entry(){
       <>
       <div class="entry">
       <div class="image">
-      <img src="../images/bsr-focus-nature-hero.jpg"></img>
+      <img src="../images/bsr-focus-nature-hero.jpg" style={{borderRadius:10}}></img>
       </div>
       <div class="text">
        <h2>Nature the home to lives!!</h2>
@@ -16,7 +16,7 @@ export default function Entry(){
      </div>
      <div class="entry">
       <div class="image">
-      <img src="../images/explore.jpg"></img>
+      <img src="../images/explore.jpg" style={{borderRadius:10}}></img>
       </div>
       <div class="text">
       <h2>Exploring the greatest truths behind tech.</h2>

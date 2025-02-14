@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import { useSearch } from "../context/SearchContext";
 import { useTheme } from "../context/ThemeContext";
+import sunIcon from '../utils/sun.png'
+import moonIcon from '../utils/moon.png'
 
 export default function Header(){
   const { searchQuery, setSearchQuery } = useSearch();
@@ -23,9 +25,9 @@ export default function Header(){
       </nav>
       <button
           onClick={toggleDarkMode}
-          className="theme-toggler"
+          className="theme-toggler "
         >
-          {darkMode ? "🌙" : "☀️"}
+          {darkMode ? <img src={moonIcon} style={{width:35,height:35}}/> : <img src={sunIcon} style={{width:35,height:35}}/>}
         </button>
     </header>
     );

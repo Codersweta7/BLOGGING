@@ -1,17 +1,17 @@
-import logo from "./logo.svg";
+import logo from "./assets/logo.svg";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 // import tech1 from "./images/tech1.jpg";
 // import nature2 from "./images/nature.webp";
 // import explore from "./images/explore.jpg";
-import Entry from "./Componrnts/Entry.js";
-import Layout from "./Componrnts/Layout.js";
-import Login from "./Componrnts/Login.js";
-import Register from "./Componrnts/Register.js";
+import Entry from "./Components/Entry.js";
+import Layout from "./Components/Layout.js";
+import Login from "./Components/Login.js";
+import Register from "./Components/Register.js";
 import BlogPostCreate from "./Pages/BlogPostCreate.js";
-import Contact from "./Componrnts/Contact.js";
-import Feedback from "./Componrnts/Feedback.js"
+import Contact from "./Components/Contact.js";
+import Feedback from "./Components/Feedback.js"
 import About from "./Pages/About.js";
 
 function App() {

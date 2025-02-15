@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import BlogEditor from "../Componrnts/BlogEditor.";
+import BlogEditor from "../Components/BlogEditor.";
 import axios from "axios";
 
 const BlogPostCreate = () => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
-  faTwitter,
+  faXTwitter,
   faLinkedin,
   faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons';
@@ -105,12 +105,12 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a
-              href={`https://twitter.com/intent/tweet?url=${currentURL}&text=Check%20this%20out!`}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-blue-400 hover:text-blue-500 text-2xl m-2'
+            href={`https://twitter.com/intent/tweet?url=${currentURL}&text=Check%20this%20out!`}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-blue-400 hover:text-blue-500 text-2xl m-2'
             >
-              <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faXTwitter} />
             </a>
 
             <a

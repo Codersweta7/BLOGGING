@@ -2,18 +2,21 @@
     "name": "blogger",
     "version": "1.0.0",
     "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
     "license": "MIT",
     "scripts": {
-      "client-install": "cd client && npm install",
-      "server-install": "cd server && npm install",
-      "install": "npm run client-install && npm run server-install",
-      "client-build": "cd client && npm run build",
-      "server-start": "cd server && npm start",
-      "build": "npm run client-build",
-      "dev": "concurrently \"npm run server-start\" \"cd client && npm start\"",
-      "start": "npm run build && npm run server-start"
+        "client-install": "cd client && npm install",
+        "server-install": "cd server && npm install",
+        "install": "npm run client-install && npm run server-install",
+        "client-build": "cd client && npm run build",
+        "server-start": "cd server && npm start",
+        "build": "npm run client-build",
+        "dev": "concurrently \"npm run server-start\" \"cd client && npm start\"",
+        "start": "npm run build && npm run server-start"
     },
     "devDependencies": {
-      "concurrently": "^6.0.0"
+        "concurrently": "^6.0.0"
     }
-  }
+}

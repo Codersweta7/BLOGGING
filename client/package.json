@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -56,6 +55,7 @@
     "@types/react": "^19.0.10",
     "install": "^0.13.0",
     "npm": "^10.9.2",
+    "typescript": "^5.7.3",
     "web-vitals": "^4.2.4"
   }
 }

@@ -1,10 +1,6 @@
 {
     "name": "blogger",
     "version": "1.0.0",
-    "private": true,
-    "workspaces": [
-        "packages/*"
-    ],
     "license": "MIT",
     "scripts": {
         "client-install": "cd client && npm install",

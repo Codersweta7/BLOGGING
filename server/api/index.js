@@ -3,8 +3,8 @@ const mongoose =require('mongoose');
 require('dotenv').config();
 const cors=require('cors');
 const Cookieparser = require("cookie-parser")
-const adminRouter=require("./routes/admin");
-const userRouter=require("./routes/user");
+const adminRouter=require("../routes/admin");
+const userRouter=require("../routes/user");
 const app=express();
 app.use(cors({
   origin: "https://blogging-silk.vercel.app",

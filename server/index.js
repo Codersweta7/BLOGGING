@@ -2,10 +2,15 @@ const express=require('express');
 const mongoose =require('mongoose');
 require('dotenv').config();
 const cors=require('cors');
+const Cookieparser = require("cookie-parser")
 const adminRouter=require("./routes/admin");
 const userRouter=require("./routes/user");
 const app=express();
-app.use(cors());
+app.use(cors({
+  origin: "https://blogging-silk.vercel.app",
+  credentials: true
+}));
+app.use(Cookieparser());
 app.use(express.json());
 const rateLimit = require('express-rate-limit');
 const loginLimiter = rateLimit({
@@ -14,8 +19,8 @@ const loginLimiter = rateLimit({
     message:"Too many login attempts from this IP,try again later"
   })
 
-app.use("/admin",loginLimiter,adminRouter)
-app.use("/user",loginLimiter,userRouter)
+app.use("/api/v1/admin",loginLimiter,adminRouter)
+app.use("/api/v1/user",loginLimiter,userRouter)
 app.get("/",(req,res)=> res.json({
     msg: "hello"
 }))

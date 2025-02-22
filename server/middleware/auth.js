@@ -1,21 +1,19 @@
-const jwt=require('jsonwebtoken');
-const SECRET='raunit45';
+const jwt = require('jsonwebtoken');
+const SECRET = 'raunit45';
 
-const authenticateJwt = (req,res,next) => {
-    const authHeader=req.headers.authorization;
-    if(authHeader)
-    {
-        const token=authHeader.split(' ')[1];
-        jwt.verify(token,SECRET,(err,user)=>{
-            if(err) {
+const authenticateJwt = (req, res, next) => {
+    const token = req.cookies.accessToken || req.headers.authorization?.split(' ')[1];
+    if (token) {
+        jwt.verify(token, SECRET, (err, user) => {
+            if (err) {
                 return res.sendStatus(403);
             }
-            req.user=user;
+            req.user = user;
             next();
         })
     }
-    else{
-         res.sendStatus(401);
+    else {
+        res.sendStatus(401);
     }
 };
 

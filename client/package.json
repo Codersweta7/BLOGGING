@@ -51,9 +51,11 @@
   "devDependencies": {
     "@babel/core": "^7.26.9",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-syntax-flow": "^7.26.0",
+    "@babel/plugin-transform-react-jsx": "^7.25.9",
+    "@types/react": "^19.0.10",
     "install": "^0.13.0",
     "npm": "^10.9.2",
-    "typescript": "^5.7.3",
     "web-vitals": "^4.2.4"
   }
 }

@@ -1,8 +1,8 @@
 {
     "name": "blogger",
     "version": "1.0.0",
-    "license": "MIT",
     "private": true,
+    "license": "MIT",
     "scripts": {
       "client-install": "cd client && npm install",
       "server-install": "cd server && npm install",

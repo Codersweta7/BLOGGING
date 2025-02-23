@@ -1,4 +1,4 @@
-import brokenFileIcon from './broken-file-icon.jpeg';
+import brokenFileIcon from './broken-file-icon.png';
 
 const NotFound = () => {
     return (
@@ -14,7 +14,5 @@ const NotFound = () => {
 </div>
 );
 }
-
-
 
 export default NotFound;

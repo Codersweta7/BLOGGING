@@ -11,13 +11,13 @@ main {
 }
 
 header {
+  position: fixed;
+  top: 0;
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 100px;
-  position: fixed;
-  top: 0;
 } 
 
 header a {

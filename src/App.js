@@ -25,7 +25,6 @@ function App() {
         <Route path={'/login'} element={<Login />} />
         <Route path={'/Register'} element={<Register />} />
         <Route path={'/feedback'} element={<Feedback />} />
-        {/* Catch-all route for 404 */}
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
